@@ -1,0 +1,126 @@
+/* 71672531T Luis Fuertes Camporro UO264691 */
+
+/* Especificidad: 0,1,1,0 */
+main section {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+/* Especificidad: 0,0,0,1 */
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Especificidad: 0,0,0,1 */
+body{
+    gap:10px
+}
+
+/* Especificidad: 0,0,0,1 */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 6px double black;
+}
+
+/* Especificidad: 0,0,0,2 */
+form input {
+    min-width: 50%;
+    border-radius: 10px;
+    line-height: 25px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Especificidad: 0,0,0,2 */
+form button, input[type="file"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Especificidad: 0,1,2,0 */
+main section article {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Especificidad: 0,0,1,0 */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Especificidad: 0,0,1,0 */
+.light {
+    width: 50px;
+    height: 50px;
+    background-color: #0007;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+}
+
+/* Especificidad: 0,2,2,1 */
+.load .light:nth-child(1) {
+    animation: lightOn 0.5s forwards;
+}
+
+/* Especificidad: 0,2,2,1 */
+.load .light:nth-child(2) {
+    animation: lightOn 0.5s forwards 0.5s;
+}
+
+/* Especificidad: 0,2,2,1 */
+.load .light:nth-child(3) {
+    animation: lightOn 0.5s forwards 1s;
+}
+
+/* Especificidad: 0,2,2,1 */
+.load .light:nth-child(4) {
+    animation: lightOn 0.5s forwards 1.5s;
+}
+
+/* Especificidad: 0,2,1,0 */
+.unload .light {
+    animation: lightOff 0.1s forwards;
+}
+
+/* Especificidad: 0,1,1,1 */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Especificidad: 0,1,1,2 */
+button:not(:disabled) {
+    background-color: #B2DFDB;
+}
+
+/* Especificidad: 0,0,0,1 */
+@keyframes lightOn {
+    to {
+        background-color: red;
+    }
+}
+
+/* Especificidad: 0,0,0,1 */
+@keyframes lightOff {
+    to {
+        background-color: #0007;
+    }
+}

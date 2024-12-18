@@ -1,0 +1,42 @@
+/* 71672531T Luis Fuertes Camporro UO264691 */
+
+/* Especificidad: 0,1,0,1 */
+main > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Especificidad: 0,1,0,2 */
+main > section > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Especificidad: 0,0,0,1 */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Especificidad: 0,0,0,1 */
+button:hover {
+    background-color: #cccccc;
+}
+
+/* Especificidad: 0,0,0,1 */
+canvas {
+    max-width: 90%;
+    border: 6px double black;
+}
+
+/* Especificidad: 0,1,0,1 */
+@media (max-width: 600px) {
+    /* Especificidad: 0,1,0,2 */
+    main > section > section {
+        flex-direction: column;
+    }
+}

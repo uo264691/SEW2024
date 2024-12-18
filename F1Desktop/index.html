@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Luis Fuertes Camporro" />
+    <meta name="description" content="Página inicial del proyecto F1 Desktop" />
+    <meta name="keywords" content="F1, Fórmula 1, Pilotos, Noticias, Calendario, Meteorología, Circuito, Viajes, Juegos" />
+    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <link rel="stylesheet" href="estilo/fondo.css"/>
+    <link rel="stylesheet" href="estilo/layout.css"/>
+    <title>F1 Desktop</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="piloto.html">Piloto</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="meteorologia.html">Meteorología</a></li>
+                <li><a href="circuito.html">Circuito</a></li>
+                <li><a href="viajes.php">Viajes</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section></section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/fondo.js"></script>
+    <script>
+    $(document).ready(function () {
+        const fondo = new Fondo('México', 'Ciudad de México', 'Autódromo Hermanos Rodríguez');
+        fondo.getFotos();
+    });
+    </script>
+    <footer>
+        <p>F1 Desktop | Creado por Luis Fuertes Camporro UO264691</p>
+    </footer>
+</body>
+
+</html>

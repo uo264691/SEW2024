@@ -1,0 +1,107 @@
+/* 71672531T Luis Fuertes Camporro UO264691 */
+
+/* Especificidad: 0,0,0,1 */
+body, main, article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Especificidad: 0,0,0,1 */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Especificidad: 0,0,0,1 */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Especificidad: 0,0,0,2 */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Especificidad: 0,0,0,1 */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    gap: 10px;
+}
+
+/* Especificidad: 0,0,0,2 */
+aside {
+    width: 90%;
+    gap: 10px;
+}
+
+/* Especificidad: 0,0,0,2 */
+section article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Especificidad: 0,0,0,2 */
+section picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Especificidad: 0,0,0,2 */
+section video, section img {
+    max-width: 50%;
+}
+
+/* Especificidad: 0,0,0,3 */
+article article ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Especificidad: 0,1,0,1 */
+@media (max-width: 768px) {
+    header p {
+        display: none;
+    }
+}
+
+/* Especificidad: 0,0,0,1 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Especificidad: 0,0,0,2 */
+    nav ul, section article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Especificidad: 0,0,0,2 */
+    section article {
+        justify-content: center;
+        align-items: center;
+    }
+}

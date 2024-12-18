@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Luis Fuertes Camporro" />
+    <meta name="description" content="Página de noticias" />
+    <meta name="keywords" content="Noticias, F1, HTML5, API File" />
+    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <link rel="stylesheet" href="estilo/article_elements.css"/>
+    <link rel="stylesheet" href="estilo/layout.css"/>
+    <title>F1 Desktop</title>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="piloto.html">Piloto</a></li>
+                <li><a class="active" href="noticias.html">Noticias</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="meteorologia.html">Meteorología</a></li>
+                <li><a href="circuito.html">Circuito</a></li>
+                <li><a href="viajes.php">Viajes</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+            </ul>
+        </nav>
+        <p>Estás en: <a href="index.html">Inicio</a> >> Noticias</p>
+    </header>
+
+    <main>
+        <section>
+            <p>Seleccionar archivo de noticias:</p>
+            <input type="file" accept=".txt">
+        </section>
+
+        <article>
+            <section></section>
+        </article>
+
+        <section>
+            <h3>Añadir Nueva Noticia</h3>
+            <form>
+                <input type="text" placeholder="Titular" required>
+                <input type="text" placeholder="Entradilla" required>
+                <input type="text" placeholder="Autor" required>
+                <button type="button">Añadir Noticia</button>
+            </form>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/noticias.js"></script>
+
+    <footer>
+        <p> F1 Desktop | Creado por Luis Fuertes Camporro UO264691</p>
+    </footer>
+</body>
+
+</html>

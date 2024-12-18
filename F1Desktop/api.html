@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Fuertes Camporro">
+    <meta name="description" content="Página de juegos">
+    <meta name="keywords" content="Memoria, Semaforo, Pinta Bigotes">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="estilo/api.css">
+    <link rel="stylesheet" href="estilo/layout.css">
+    <title>F1 Desktop</title>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="piloto.html">Piloto</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="meteorologia.html">Meteorología</a></li>
+                <li><a href="circuito.html">Circuito</a></li>
+                <li><a href="viajes.php">Viajes</a></li>
+                <li><a class="active" href="juegos.html">Juegos</a></li>
+            </ul>
+        </nav>
+        <p>Estás en: <a href="index.html">Inicio</a> >> Juegos</p>
+    </header>
+
+    <main>
+        <article>
+            <h2>Sección de juegos</h2>
+            <article>
+                <ul>
+                    <li><a href="memoria.html">Memoria</a></li>
+                    <li><a href="semaforo.php">Semáforo</a></li>
+                    <li><a class="active" href="api.html">Pinta Bigotes</a></li>
+                </ul>
+            </article>
+        </article>
+
+        <section>
+            <p>Cambia la imagen si lo deseas (API File), dibuja un bigote a tu piloto (API Canvas) y guarda los cambios en la web (API Web Storage guarda imagen en localStorage).</p>
+            <section>
+                <button type="button">Añadir Otra Foto</button>
+                <button type="button">Guardar Dibujo</button>
+                <button type="button">Limpiar Dibujo</button>
+            </section>
+            <p></p>
+            <canvas width="500" height="500"></canvas>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/api.js"></script>
+
+    <footer>
+        <p>F1 Desktop | Creado por Luis Fuertes Camporro UO264691</p>
+    </footer>
+</body>
+
+</html>

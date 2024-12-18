@@ -1,0 +1,184 @@
+/* 71672531T Luis Fuertes Camporro UO264691 */
+
+/* Especificidad: 0,0,0,0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Especificidad: 0,0,0,1 */
+header, footer {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    border: 6px double #2b2b2b;
+}
+
+/* Especificidad: 0,0,0,1 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Especificidad: 0,0,0,1 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', sans-serif;
+}
+
+/* Especificidad: 0,0,0,2 */
+nav a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s;
+}
+
+/* Especificidad: 0,0,0,1 */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+/* Especificidad: 0,0,0,2 */
+h1 a {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+/* Especificidad: 0,0,0,1 */
+h2 {
+    font-size: 2rem;
+    color: #444;
+}
+
+/* Especificidad: 0,0,0,1 */
+h3 {
+    font-size: 1.75rem;
+    color: #555;
+}
+
+/* Especificidad: 0,0,0,1 */
+h4, h5, h6 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* Especificidad: 0,0,0,1 */
+header p {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Especificidad: 0,0,0,1 */
+a {
+    color: #0073e6;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Especificidad: 0,0,0,1 */
+a:hover {
+    color: #005bb5;
+    text-decoration: none;
+}
+
+/* Especificidad: 0,0,0,1 */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+/* Especificidad: 0,0,0,3 */
+nav ul, article article ul {
+    list-style-type: none;
+}
+
+/* Especificidad: 0,0,0,1 */
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+/* Especificidad: 0,0,0,2 */
+ul ul, ol ol {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Especificidad: 0,0,0,1 */
+dl dt {
+    font-weight: bold;
+    color: #0666c5;
+    padding: 5px;
+}
+
+/* Especificidad: 0,0,0,1 */
+dl dd {
+    margin-left: 20px;
+    color: #333;
+}
+
+/* Especificidad: 0,0,0,1 */
+table {
+    width: 100%; /* Adaptabilidad */
+    border-collapse: collapse;
+}
+
+/* Especificidad: 0,0,0,1 */
+table caption {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Especificidad: 0,0,0,1 */
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Especificidad: 0,0,0,1 */
+th {
+    background-color: #005bb5;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Especificidad: 0,0,0,1 */
+td {
+    font-size: 1rem;
+}
+
+/* Especificidad: 0,0,0,1 */
+footer {
+    font-size: 0.7em;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Especificidad: 0,0,1,0 */
+.active {
+    color: #9900ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Especificidad: 0,0,1,0 */
+.active:hover {
+    color: #7c02ce;
+}
+
+/* Especificidad: 0,1,0,1 */
+@media (max-width: 600px) {
+    th {
+        font-size: 0.7rem;
+    }
+}

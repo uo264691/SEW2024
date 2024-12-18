@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Luis Fuertes Camporro" />
+    <meta name="description" content="Página sobre México" />
+    <meta name="keywords" content="México, Ciudad de México" />
+    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <link rel="stylesheet" href="estilo/article_elements.css"/>
+    <link rel="stylesheet" href="estilo/layout.css"/>
+    <title>F1 Desktop</title>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="piloto.html">Piloto</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a class="active" href="meteorologia.html">Meteorología</a></li>
+                <li><a href="circuito.html">Circuito</a></li>
+                <li><a href="viajes.php">Viajes</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+            </ul>
+        </nav>
+        <p>Estás en: <a href="index.html">Inicio</a> >> Meteorología</p>
+    </header>
+
+    <main>
+        <article>
+            <h2></h2>
+            <h3>Información general:</h3>
+            <ul></ul>
+        </article>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/pais.js"></script>
+    <script>
+        const mexico = new Pais("México", "Ciudad de México");
+        mexico.completaInformacion(
+            "126,014,024",
+            "Autódromo Hermanos Rodríguez",
+            "República Federal",
+            { latitud: "19.40417", longitud: "-99.09306" },
+            "Catolicismo"
+        );
+
+        document.querySelector("main article h2").textContent = mexico.getNombre() + " - Capital: " + mexico.getCapital();
+        document.querySelector("main article ul").innerHTML = mexico.getInfoPais();
+        document.write("<br>")
+        mexico.writeCoordenadas();
+
+        mexico.getPrevision();
+
+
+    </script>
+
+    <footer>
+        <p> F1 Desktop | Creado por Luis Fuertes Camporro UO264691</p>
+    </footer>
+</body>
+
+</html>

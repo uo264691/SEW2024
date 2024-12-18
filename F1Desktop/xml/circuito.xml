@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito>
+    <nombre>Autódromo Hermanos Rodríguez</nombre>
+    <longitud_circuito unidad="km">4.304</longitud_circuito>
+    <anchura_media unidad="m">15</anchura_media>
+    <fecha_carrera>2024-10-27</fecha_carrera>
+    <hora_inicio>14:00:00</hora_inicio>
+    <vueltas>71</vueltas>
+    <localidad>Ciudad de México</localidad>
+    <pais>México</pais>
+    <referencias>
+        <referencia>https://es.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez</referencia>
+        <referencia>https://www.formula1.com/en/racing/2024/Mexico.html</referencia>
+        <referencia>https://www.sportingnews.com/es/formula-1/news/autodromo-hermanos-rodriguez-nombre-circuito-gran-premio-mexico/jhcklw99g8kuzl5ygn5ot1a4</referencia>
+    </referencias>
+    <galeria_fotografias>
+        <fotografia>circuito.png</fotografia>
+        <fotografia>actualidad.jpg</fotografia>
+        <fotografia>hermanos.webp</fotografia>
+    </galeria_fotografias>
+    <galeria_videos>
+        <video>max-verstappen-s-onboard-pole-lap-2022-mexico-city-grand-prix.mp4</video>
+    </galeria_videos>
+    <coordenadas>
+        <longitud_geo>-99.093072</longitud_geo>
+        <latitud_geo>19.404167</latitud_geo>
+        <altitud unidad="m">2240</altitud>
+    </coordenadas>
+   <tramos>
+    <tramo distancia="136.69" unidad="m">
+        <longitud_geo>-99.09000</longitud_geo>
+        <latitud_geo>19.40167</latitud_geo>
+        <altitud unidad="m">2240</altitud>
+        <sector>1</sector>
+    </tramo>
+    <tramo distancia="157.12" unidad="m">
+        <longitud_geo>-99.09056</longitud_geo>
+        <latitud_geo>19.40278</latitud_geo>
+        <altitud unidad="m">2240</altitud>
+        <sector>2</sector>
+    </tramo>
+    <tramo distancia="412.70" unidad="m">
+        <longitud_geo>-99.09194</longitud_geo>
+        <latitud_geo>19.40333</latitud_geo>
+        <altitud unidad="m">2240</altitud>
+        <sector>3</sector>
+    </tramo>
+    <tramo distancia="412.70" unidad="m">
+        <longitud_geo>-99.09583</longitud_geo>
+        <latitud_geo>19.40389</latitud_geo>
+        <altitud unidad="m">2240</altitud>
+        <sector>4</sector>
+    </tramo>
+</tramos>
+</circuito>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Luis Fuertes Camporro" />
+    <meta name="description" content="Página Circuito" />
+    <meta name="keywords" content="Circuito, XML, KML" />
+    <link rel="stylesheet" href="estilo/estilo.css"/>
+    <link rel="stylesheet" href="estilo/layout.css"/>
+    <title>F1 Desktop</title>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="piloto.html">Piloto</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="meteorologia.html">Meteorología</a></li>
+                <li><a class="active" href="circuito.html">Circuito</a></li>
+                <li><a href="viajes.php">Viajes</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
+            </ul>
+        </nav>
+        <p>Estás en: <a href="index.html">Inicio</a> >> Circuito</p>
+    </header>
+
+    <main>
+        <section>
+            <p>Subir archivo XML:</p>
+            <input type="file" data-tipo="xml">
+        </section>
+    
+        <section>
+            <p>Subir archivo KML:</p>
+            <input type="file" data-tipo="kml">
+        </section>
+    
+        <section>
+            <p>Subir archivo SVG:</p>
+            <input type="file" data-tipo="svg">
+        </section>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbhqDEkrpYBbkh8YtsmtKbro1TR2LCP4Q"></script>
+    <script src="js/circuito.js"></script>
+
+    <footer>
+        <p> F1 Desktop | Creado por Luis Fuertes Camporro UO264691</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+/* 71672531T Luis Fuertes Camporro UO264691 */
+
+/* Especificidad: (0, 1, 1) */
+body section {
+    content: '';
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}

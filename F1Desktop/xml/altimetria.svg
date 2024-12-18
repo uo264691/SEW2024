@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+<rect width="1000" height="500" fill="#f0f0f0"/>
+<line x1="50" y1="450" x2="950" y2="450" stroke="black" />
+<line x1="50" y1="450" x2="50" y2="50" stroke="black" />
+<polyline points="159.9177098131718,50.0 286.26397190875707,50.0 618.1319859543785,50.0 950.0,50.0" fill="none" stroke="blue" stroke-width="2"/>
+<polyline points="50,450 159.9177098131718,50.0 286.26397190875707,50.0 618.1319859543785,50.0 950.0,50.0 950.0,450" fill="lightblue" opacity="0.5"/>
+<text x="10" y="20" font-size="14" fill="black">Perfil de Altimetría del Circuito</text>
+</svg>

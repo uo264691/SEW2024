@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Circuito</name>
+    <description>Planimetría del circuito</description>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>Ruta del circuito</name>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          -99.09000,19.40167,2240
+          -99.09056,19.40278,2240
+          -99.09194,19.40333,2240
+          -99.09583,19.40389,2240
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
